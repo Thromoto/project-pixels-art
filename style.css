@@ -1,8 +1,8 @@
 .color {
     display: inline-block;
     border: solid black 1px;
-    height: 150px;
-    width: 150px;
+    height: 50px;
+    width: 50px;
 }
 
 #colorBlack {
@@ -19,4 +19,20 @@
 
 #colorRed {
     background-color: red;
+}
+
+#pixel-board {
+    height: 280px;
+    width: 280px;
+    /* border: solid black 1px; */
+    display: inline-block;
+    flex-direction: column;
+}
+
+.pixel {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: solid black 1px;
+    display: inline-block;
 }
