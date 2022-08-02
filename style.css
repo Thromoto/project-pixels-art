@@ -5,18 +5,18 @@
     width: 150px;
 }
 
-#colorRed {
-    background-color: red;
+#colorBlack {
+    background-color: black;
 }
 
 #colorBlue {
     background-color: blue;
 }
 
-#colorBrown {
-    background-color: brown;
+#colorGrey {
+    background-color: grey;
 }
 
-#colorViolet {
-    background-color: violet;
+#colorRed {
+    background-color: red;
 }
