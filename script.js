@@ -1,25 +1,30 @@
 let color = document.querySelectorAll('.color');
 
 function selectedColor(event) {
-    for (let index = 0; index < color.length; index += 1){
+    for (let index = 0; index < color.length; index += 1) {
         color[index].classList.remove('selected');
     }
     event.target.classList.add('selected');
 }
 
-window.onload = function novaCor () {
+window.onload = function novaCor() {
     for (let index = 0; index < color.length; index += 1) {
         color[index].addEventListener('click', selectedColor);
     }
-    // selected = document.querySelectorAll('.selected');
-    // console.log(selected);;
+
+    const pixelBoard = document.getElementById('pixel-board');
 }
 
-
-
-// window.onload = function() {
-//     let alternativesColor = document.querySelector('#color-palette');
-//     alternativesColor.addEventListener('click', function (event) {
-//         console.log(event.target);
-//     });
-// };
+function corPixel () {
+    let boardPixel = document.getElementById('pixel-board');
+    boardPixel.addEventListener('click', function(event){
+        let pixelSelect = event.target;
+        // console.log(pixelSelect);
+        let colorSelected = document.querySelector('.selected');
+        // console.log(colorSelected);
+        if (pixelSelect.classList == 'pixel'){
+            pixelSelect.id = colorSelected.id;
+        }
+    })
+}
+corPixel();
