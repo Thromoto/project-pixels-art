@@ -19,12 +19,23 @@ function corPixel () {
     let boardPixel = document.getElementById('pixel-board');
     boardPixel.addEventListener('click', function(event){
         let pixelSelect = event.target;
-        // console.log(pixelSelect);
         let colorSelected = document.querySelector('.selected');
-        // console.log(colorSelected);
+        
         if (pixelSelect.classList == 'pixel'){
             pixelSelect.id = colorSelected.id;
         }
     })
 }
 corPixel();
+
+
+function limpandoPixel () {
+    let button = document.querySelector('#clear-board');
+    let pixel = document.querySelectorAll('.pixel');
+    button.addEventListener('click', function () {
+        for (let index = 0; index < pixel.length; index +=1){
+            pixel[index].id = document.getElementsByClassName('pixel');
+        }
+    })
+}
+limpandoPixel();
