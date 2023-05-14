@@ -12,7 +12,7 @@ window.onload = function novaCor() {
     color[index].addEventListener('click', selectedColor);
   }
 
-  const pixelBoard = document.getElementById('pixel-board');
+  // const pixelBoard = document.getElementById('pixel-board');
 };
 
 function corPixel() {
@@ -21,7 +21,7 @@ function corPixel() {
     const pixelSelect = event.target;
     const colorSelected = document.querySelector('.selected');
 
-    if (pixelSelect.classList === 'pixel') {
+    if (pixelSelect.classList == 'pixel') {
       pixelSelect.id = colorSelected.id;
     }
   });
